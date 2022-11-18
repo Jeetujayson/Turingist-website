@@ -1,0 +1,44 @@
+body {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: #fff;
+  color: #1d1d1f;
+  font-style: normal;
+}
+#logo {
+  width: 200px;
+  max-width: 200px;
+
+  /* filter: drop-shadow(1px 1px #0071e3); */
+}
+#header {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-width: auto;
+
+  height: 90px;
+  max-height: 90px;
+  /* background: rgba(0, 0, 0, 0.92); */
+  font-size: 17px;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+#heading {
+  margin-top: 100px;
+}
