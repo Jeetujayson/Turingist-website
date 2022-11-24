@@ -89,7 +89,7 @@ h2{
   border-width: 20px;
   border-color: transparent;
   padding: 20px 40px;
-  width: 280px;
+  width: 200px;
   border-radius: 50%;
   
   background: #e8e8e8;
@@ -101,7 +101,7 @@ h2{
 }
 #python-logo{
   filter: drop-shadow(4px 4px 1px #000000);
-  width: 280px;
+  width: 200px;
 /* filter: drop-shadow(4px 4px 1px #00FF00); */
 /* -webkit-filter: drop-shadow(0 5px 2px rgb(34, 34, 34) ); */
 }
