@@ -1,381 +1,237 @@
-@media only screen and (max-width: 600px) {
-    body {
-    font-size: 14px;
-    }
-    #header {
-    height: 70px;
-    }
-    #logo {
-    width: 150px;
-    }
-    nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    }
-    nav ul li {
-    width: 100%;
-    margin: 5px 0;
-    }
-    #hero-section {
-    text-align: center;
-    }
-    #hero-section h1 {
-    font-size: 30px;
-    }
-    #hero-section p {
-    font-size: 14px;
-    }
-    #featured-tools {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    }
-    .tool-card {
-    width: 45%;
-    margin: 10px 0;
-    }
-    .tool-card img {
-    width: 100%;
-    }
-    .tool-card h3 {
-    font-size: 18px;
-    }
-    .tool-card p {
-    font-size: 14px;
-    }
-    #services section {
-    width: 100%;
-    margin: 10px 0;
-    }
-    #services h2 {
-    font-size: 20px;
-    }
-    #services h3 {
-    font-size: 18px;
-    }
-    #services p {
-    font-size: 14px;
-    }
-    #how-it-works {
-    text-align: center;
-    }
-    #how-it-works h2 {
-    font-size: 20px;
-    }
-    #how-it-works p {
-    font-size: 14px;
-    }
-    #testimonials {
-    text-align: center;
-    }
-    #testimonials h2 {
-    font-size: 20px;
-    }
-    .testimonial {
-    width: 80%;
-    margin: 10px auto;
-    }
-    .testimonial p {
-    font-size: 14px;
-    }
-    .testimonial h3 {
-    font-size: 16px;
-    }
-    #about-us {
-    text-align: center;
-    }
-    #about-us h2 {
-    font-size: 20px;
-    }
-    #about-us p {
-    font-size: 14px;
-    }
-    #about-us img {
-    width: 50%;
-    }
-    #contact-us {
-    text-align: center;
-    }
-    #contact-us h2 {
-    font-size: 20px;
-    }
-    #contact-us form {
-    width: 80%;
-    margin: 10px auto;
-    }
-    #contact-us input[type="text"],
-    #contact-us input[type="email"],
-    #contact-us textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    font-size: 14px;
-    }
-    #contact-us input[type="submit"] {
-    font-size: 14px;
-    }
-    @media only screen and (max-width: 768px) {
-        /* make header and logo smaller */
-        #header {
-        height: 70px;
-        max-height: 70px;
-        }
-        #logo {
-        width: 150px;
-        }
-        
-        /* make font sizes smaller */
-        h1 {
-        font-size: 20px;
-        }
-        h2 {
-        font-size: 18px;
-        }
-        h3 {
-        font-size: 16px;
-        }
-        p {
-        font-size: 14px;
-        }
-        
-        /* stack featured tools cards */
-        .tool-card {
-        width: 100%;
-        margin: 20px 0;
-        }
-        
-        /* stack services sections */
-        #services section {
-        width: 100%;
-        margin: 20px 0;
-        }
-        
-        /* make cta buttons smaller */
-        .cta-button {
-        padding: 8px 15px;
-        font-size: 14px;
-        }
-        }
-        
-        @media only screen and (max-width: 480px) {
-        /* hide nav links and show a hamburger menu */
-        nav {
-        display: none;
-        }
-        #hamburger-menu {
-        display: block;
-        }
-        #hamburger-menu ul {
-        display: none;
-        }
-        #hamburger-menu:hover ul {
-        display: block;
-        position: absolute;
-        background: #fff;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-        }
-        
-        /* hamburger menu styling */
-        #hamburger-menu {
-        display: none;
-        cursor: pointer;
-        padding: 10px;
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        }
-        #hamburger-menu span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background: #000;
-        margin: 5px 0;
-        }
-        #hamburger-menu:hover span {
-        background: #0071e3;
-        }
-        #hamburger-menu ul {
-        list-style: none;
-        }
-        #hamburger-menu ul li {
-        text-align: center;
-        padding: 10px 0;
-        }
-        #hamburger-menu ul li a {
-        color: #000;
-        text-decoration: none;
-        font-size: 16px;
-        }
-        #hamburger-menu ul li a:hover {
-        color: #0071e3;
-        }
-        
-        /* remove underline from links */
-        a {
-        text-decoration: none;
-        }
-        .cta-button, a.cta-button {
-        text-decoration: none;
-        }
-        .tool-card a {
-        text-decoration: none;
-        }
-        #services section a {
-        text-decoration: none;
-        }
-        
-        /* center elements */
-        #header {
-        text-align: center;
-        }
-        #hero-section {
-        text-align: center;
-        }
-    /* Mobile-optimized CSS code */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-@media only screen and (max-width: 600px) {
-    body {
-    font-size: 15px;
-    }
-    
-    #header {
-    height: 70px;
-    }
-    
-    #logo {
-    width: 150px;
-    }
-    
-    #hero-section {
+
+
+body {
+font-family: 'Open Sans', sans-serif;
+background-color: #f5f5f5;
+}
+
+header {
+background-color: #222;
+color: #fff;
+padding: 20px;
+}
+
+#header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin: 0 auto;
+max-width: 1200px;
+}
+
+#logo {
+width: 300px;
+}
+
+nav {
+display: flex;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+}
+
+nav ul li {
+margin-right: 20px;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+}
+
+#hero-section {
+background-color: #222;
+color: #fff;
+padding: 100px 0;
+text-align: center;
+}
+
+#hero-section h1 {
+font-size: 36px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+#hero-section p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 40px;
+}
+
+#hero-section .cta-button {
+background-color: #fff;
+color: #222;
+padding: 10px 20px;
+border-radius: 20px;
+text-decoration: none;
+font-weight: 700;
+transition: all 0.2s ease-in-out;
+}
+
+#hero-section .cta-button:hover {
+background-color: #ccc;
+color: #222;
+}
+
+#featured-tools {
+padding: 80px 0;
+text-align: center;
+}
+
+#featured-tools h2 {
+font-size: 36px;
+font-weight: 700;
+margin-bottom: 40px;
+}
+
+.tool-card {
+display: inline-block;
+margin: 0 20px;
+vertical-align: top;
+width: 300px;
+text-align: center;
+}
+
+.tool-card img {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.tool-card h3 {
+font-size: 24px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+
+.tool-card p {
+font-size: 18px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+#services {
+background-color: #f5f5f5;
+padding: 80px 0;
+}
+
+#services h2 {
+    font-size: 36px;
+    font-weight: 700;
     text-align: center;
-    }
-    
-    #hero-section h1 {
-    font-size: 35px;
-    }
-    
-    #hero-section p {
-    font-size: 15px;
-    }
-    
-    #hero-section .cta-button {
-    font-size: 15px;
-    padding: 10px 15px;
-    }
-    
-    #featured-tools {
-    text-align: center;
-    }
-    
-    #featured-tools h2 {
-    font-size: 25px;
-    }
-    
-    .tool-card {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-    }
-    
-    .tool-card img {
-    width: 80%;
-    }
-    
-    .tool-card h3 {
-    font-size: 20px;
-    }
-    
-    .tool-card p {
-    font-size: 15px;
-    }
-    
-    .tool-card .cta-button {
-    font-size: 15px;
-    padding: 10px 15px;
-    }
-    
-    #services {
-    text-align: center;
-    }
-    
-    #services h2 {
-    font-size: 25px;
+    margin-bottom: 40px;
     }
     
     #services section {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: top;
+    width: 300px;
+    text-align: center;
     }
     
     #services section h3 {
-    font-size: 20px;
-    }
-    
-    #services section p {
-    font-size: 15px;
-    }
-    
-    #services section .cta-button {
-    font-size: 15px;
-    padding: 10px 15px;
-    }
-    
-    #how-it-works {
-    text-align: center;
-    }
-    
-    #how-it-works h2 {
-    font-size: 25px;
-    }
-    
-    #how-it-works p {
-    font-size: 15px;
-    }
-    
-    #testimonials {
-    text-align: center;
-    }
-    
-    #testimonials h2 {
-    font-size: 25px;
-    }
-    
-    #testimonials .testimonial {
-    width: 90%;
-    margin: 0 auto;
+    font-size: 24px;
+    font-weight: 700;
     margin-bottom: 20px;
     }
     
-    #testimonials .testimonial p {
-    font-size: 15px;
+    #services section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
     }
     
-    #testimonials .testimonial h3 {
-    font-size: 15px;
+    #services section .cta-button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    #services section .cta-button:hover {
+    background-color: #ccc;
+    color: #222;
+    }
+    
+    #resources {
+    padding: 80px 0;
+    text-align: center;
+    }
+    
+    #resources h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    }
+    
+    #resources p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    }
+    
+    #resources .cta-button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
+    }
+    
+    #resources .cta-button:hover {
+    background-color: #ccc;
+    color: #222;
     }
     
     #about-us {
+    background-color: #f5f5f5;
+    padding: 80px 0;
     text-align: center;
     }
     
     #about-us h2 {
-    font-size: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
     }
     
     #about-us p {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
     }
     
-    #about-us .cta-button {
-    font-size: 15px;
-    padding: 10px 15px;
+    #contact-us {
+    padding: 80px 0;
+    text-align: center;
     }
     
-}}
+    #contact-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    }
+    
+    #contact-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    }
+    
+    #contact-us .cta-button {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease-in-out;
