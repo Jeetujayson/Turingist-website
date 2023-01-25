@@ -1,238 +1,411 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap');
-
-
+a, button {
+  text-decoration: none;
+}
 
 body {
-font-family: 'Open Sans', sans-serif;
-background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    /* letter-spacing: -0.022em; */
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    background-color: #fff;
+    /* background-color: #e9e9e9; */
+    color: #1d1d1f;
+    font-style: normal;
+  }
+  #logo {
+    width: 200px;
+    /* max-width: 200px; */
+  
+    /* filter: drop-shadow(1px 1px #0071e3); */
+  }
+  #header {
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    min-width: auto;
+    
+    /* height: 90px;
+    max-height: 90px; */
+  
+    font-size: 17px;
+  
+  }
+  #heading {
+    margin-top: 130px;
+    padding-top: 0px;
+    font-size: 25px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+  }
+  
+  .book-a-call{
+    cursor: pointer;
+    padding: 10px 20px;
+      background: #06c;
+      border: none;
+      border-radius: 30px;
+      font-size:20px;
+      color: #fff;
+      
+  }
+  .book-a-call:hover{
+    background: #0071e3;
+  
+  }
+  .underline {
+    /* color: #00FF00; */
+    color: #0071e3;
+    text-shadow: 1px 1px 2px  black;
+  }
+  h2{
+    /* font-size: 25px; */
+    font-weight: 200;
+    color: #6e6e73;
+    margin: 25px 100px;
+  
+    font-size: 50px;
+    line-height: 1.14286;
+    font-weight: 200;
+    letter-spacing: .007em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  }
+  #subheading{
+    margin-top: 40px;
+  }
+  #image-box{
+    display: inline-block;
+  
+    border-style: double;
+    border-width: 20px;
+    border-color: transparent;
+    padding: 35px 40px;
+    width: 200px;
+    border-radius: 50%;
+    
+    background: #e8e8e8;
+    
+    box-shadow: inset -7px -7px 5px #fff, inset 7px 7px 7px rgba(94, 104, 121, 0.288);
+    filter: drop-shadow( 5px 5px 15px #bdbdbd);
+    
+    
+  }
+
+
+
+
+
+
+
+#featured-tools {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    }
+    
+    .tool-card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px #c4c4c4;
+    padding: 20px;
+    }
+    
+    .tool-card img {
+    width: 200px;
+    margin: 0 auto;
+    }
+    
+    .tool-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    }
+    
+    .tool-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    }
+    
+    .tool-card .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0071e3;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    }
+    
+    .tool-card .cta-button:hover {
+    background: #0c4da2;
+    }
+    
+    #how-it-works {
+    padding: 50px 200px;
+    margin-top: 50px;
+    text-align: center;
+    }
+    
+    #testimonials {
+    display: block;
+    margin: 20px;
+    background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
+    padding: 20px;
+    margin-top: 50px;
+
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .testimonial {
+    display: inline-block;
+    width: 400px;
+    margin: 0 20px;
+    text-align: center;
+    }
+    
+    .testimonial p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 10px;
+    }
+    
+    .testimonial h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    }
+    
+    footer {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+    }
+    
+    #about-us, #contact-us {
+    width: 400px;
+    margin: 0 auto;
+    }
+    
+    #about-us h2, #contact-us h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:20px;
 }
 
-header {
-background-color: #222;
+#services {
+  margin: 20px;
+  background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
+  padding: 20px;
+  text-align: center;
+}
+
+#web-development, #software-development {
+  display: inline-block;
+  width: 30%; /* set the width of each section to 49% to prevent them from taking up the full width */
+  margin: 1%; /* add a margin of 1% between the sections */
+}
+
+
+#about-us p, #contact-us p {
+font-size: 16px;
+line-height: 1.5;
+margin-bottom: 20px;
+}
+
+#about-us .cta-button, #contact-us .cta-button {
+padding: 10px 20px;
+background: #0071e3;
+border: none;
+border-radius: 30px;
+font-size: 18px;
 color: #fff;
-padding: 20px;
 }
 
-#header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-margin: 0 auto;
-max-width: 1200px;
+#about-us .cta-button:hover, #contact-us .cta-button:hover {
+background: #0c4da2;
 }
 
-#logo {
-width: 300px;
+#legal {
+margin-top: 20px;
 }
 
-nav {
-display: flex;
+#legal p {
+font-size: 14px;
+color: #6e6e73;
 }
 
 nav ul {
 display: flex;
+justify-content: space-between;
+align-items: center;
 list-style: none;
-}
-
-nav ul li {
-margin-right: 20px;
+margin: 0;
+padding: 0;
 }
 
 nav ul li a {
 color: #fff;
 text-decoration: none;
+font-size: 18px;
+margin-right: 20px;
+}
+
+nav ul li a:hover {
+color: #0071e3;
 }
 
 #hero-section {
-background-color: #222;
-color: #fff;
+margin-top: 100px;
+background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
 padding: 100px 0;
 text-align: center;
 }
 
 #hero-section h1 {
-font-size: 36px;
-font-weight: 700;
+font-size: 40px;
+font-weight: 600;
 margin-bottom: 20px;
 }
 
 #hero-section p {
 font-size: 18px;
 line-height: 1.5;
-margin-bottom: 40px;
+margin-bottom: 30px;
 }
 
 #hero-section .cta-button {
-background-color: #fff;
-color: #222;
 padding: 10px 20px;
-border-radius: 20px;
-text-decoration: none;
-font-weight: 700;
-transition: all 0.2s ease-in-out;
+background: #0071e3;
+border: none;
+border-radius: 30px;
+font-size: 18px;
+color: #fff;
 }
 
 #hero-section .cta-button:hover {
-background-color: #ccc;
-color: #222;
+background: #0c4da2;
 }
 
-#featured-tools {
-padding: 80px 0;
-text-align: center;
+header {
+
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 9999;
 }
 
-#featured-tools h2 {
-font-size: 36px;
-font-weight: 700;
-margin-bottom: 40px;
-}
-
-.tool-card {
-display: inline-block;
-margin: 0 20px;
-vertical-align: top;
-width: 300px;
-text-align: center;
-}
-
-.tool-card img {
-width: 100%;
-margin-bottom: 20px;
-}
-
-.tool-card h3 {
-font-size: 24px;
-font-weight: 700;
-margin-bottom: 20px;
-}
-
-.tool-card p {
-font-size: 18px;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-#services {
-background-color: #f5f5f5;
-padding: 80px 0;
-}
-
-#services h2 {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 40px;
+header nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #0071e3;
     }
     
-    #services section {
-    display: inline-block;
-    margin: 0 20px;
-    vertical-align: top;
-    width: 300px;
-    text-align: center;
+    header nav ul li {
+    margin-right: 20px;
     }
     
-    #services section h3 {
+    header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    header nav ul li a:hover {
+    color: #0c4da2;
+    }
+    
+    header nav ul li a.active {
+    color: #0c4da2;
+    font-weight: bold;
+    }
+    
+    header nav .logo {
     font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    }
-    
-    #services section p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    }
-    
-    #services section .cta-button {
-    background-color: #222;
+    font-weight: 600;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
     text-decoration: none;
-    font-weight: 700;
-    transition: all 0.2s ease-in-out;
     }
     
-    #services section .cta-button:hover {
-    background-color: #ccc;
-    color: #222;
+    header nav .logo:hover {
+    color: #0c4da2;
     }
     
-    #resources {
-    padding: 80px 0;
-    text-align: center;
-    }
-    
-    #resources h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    }
-    
-    #resources p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    }
-    
-    #resources .cta-button {
-    background-color: #222;
+    header nav .menu-toggle {
+    display: none;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.2s ease-in-out;
+    font-size: 24px;
+    cursor: pointer;
     }
     
-    #resources .cta-button:hover {
-    background-color: #ccc;
-    color: #222;
+    @media screen and (max-width: 768px) {
+    header nav ul {
+    display: none;
+    }
+    header nav .menu-toggle {
+    display: block;
+    }
     }
     
-    #about-us {
-    background-color: #f5f5f5;
-    padding: 80px 0;
-    text-align: center;
+    @media screen and (min-width: 769px) {
+    header nav .menu-toggle {
+    display: none;
+    }
     }
     
-    #about-us h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    .menu-open {
+    display: flex !important;
     }
     
-    #about-us p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+    @media only screen and (max-width: 768px) {
+      #header {
+        text-align: center;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      #featured-tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .tool-card {
+        width: 80%;
+        margin: 20px 10%;
+      }
     }
     
-    #contact-us {
-    padding: 80px 0;
-    text-align: center;
-    }
+    @media only screen and (max-width: 768px) {
+      /* styles for mobile and
     
-    #contact-us h2 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    }
+    /* Add more styles as needed to improve the look and feel of the website */
     
-    #contact-us p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    }
+    /* Make sure to test the website on different screen sizes and devices to ensure a consistent design and user experience */
     
-    #contact-us .cta-button {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.2s ease-in-out;
-    }
+    /* Use CSS preprocessors like SASS or LESS to make your CSS code more organized and maintainable */
