@@ -3,6 +3,7 @@ a, button {
 }
 
 body {
+    
     margin: 0;
     padding: 0;
     text-align: center;
@@ -210,12 +211,14 @@ body {
     #about-us, #contact-us {
     width: 400px;
     margin: 0 auto;
+    text-align: center;
     }
     
     #about-us h2, #contact-us h2 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom:20px;
+    text-align: center;
 }
 
 #services{
@@ -377,7 +380,7 @@ header nav {
     cursor: pointer;
     }
     
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
     header nav ul {
     display: none;
     }
@@ -386,7 +389,7 @@ header nav {
     }
     }
     
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 600px) {
     header nav .menu-toggle {
     display: none;
     }
@@ -396,7 +399,7 @@ header nav {
     display: flex !important;
     }
     
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 600px) {
       #header {
         text-align: center;
       }
