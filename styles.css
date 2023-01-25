@@ -19,6 +19,10 @@ body {
   }
   #logo {
     width: 200px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     /* max-width: 200px; */
   
     /* filter: drop-shadow(1px 1px #0071e3); */
@@ -27,14 +31,14 @@ body {
     background: rgba(0, 0, 0, 0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
+    position: center;
+    /* top: auto;
+    right: auto;
+    left: auto; */
     z-index: 9999;
     display: block;
     margin: 0;
-    width: 100%;
+    width: auto;
     min-width: auto;
     
     /* height: 90px;
@@ -162,7 +166,7 @@ body {
     }
     
     #how-it-works {
-    padding: 50px 200px;
+    padding: auto;
     margin-top: 50px;
     text-align: center;
     }
@@ -170,9 +174,9 @@ body {
     #testimonials {
     display: block;
     margin: 20px;
-    background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
     padding: 20px;
     margin-top: 50px;
+    background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
 
     justify-content: center;
     align-items: center;
@@ -180,7 +184,7 @@ body {
     
     .testimonial {
     display: inline-block;
-    width: 400px;
+    width: 300px;
     margin: 0 20px;
     text-align: center;
     }
@@ -199,7 +203,7 @@ body {
     
     footer {
     background-color: #f8f8f8;
-    padding: 50px 0;
+    padding: 50px auto;
     text-align: center;
     }
     
@@ -214,23 +218,28 @@ body {
     margin-bottom:20px;
 }
 
-@media only screen and (max-width: 600px) {
-#services {
+#services{
   margin: 20px;
   background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
-  padding: 20px;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-
+  padding: 50px 20px;
+  margin-top: 50px;
+  
 }
 
 #web-development, #software-development {
-  display: block;
-  width: 30%; /* set the width of each section to 49% to prevent them from taking up the full width */
-  margin: 1%; /* add a margin of 1% between the sections */
+  display: inline-block;
+  margin: 20px;
+  
 }
+
+@media only screen and (max-width: 600px) {
+  #web-development, #software-development {
+    display: block;
+    
+  }
+  
+}
+
 
 
 #about-us p, #contact-us p {
@@ -282,7 +291,7 @@ color: #0071e3;
 }
 
 #hero-section {
-margin-top: 100px;
+
 background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
 padding: 100px 0;
 text-align: center;
@@ -315,7 +324,7 @@ background: #0c4da2;
 
 header {
 
-position: fixed;
+position: center;
 top: 0;
 left: 0;
 right: 0;
@@ -332,7 +341,7 @@ header nav {
     }
     
     header nav ul li {
-    margin-right: 20px;
+    margin: auto;
     }
     
     header nav ul li a {
@@ -406,7 +415,7 @@ header nav {
       }
     }
     
-    @media only screen and (max-width: 768px) {
+ 
       /* styles for mobile and
     
     /* Add more styles as needed to improve the look and feel of the website */
