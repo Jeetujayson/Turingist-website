@@ -203,13 +203,15 @@ body {
     }
     
     footer {
+    
     background-color: #f8f8f8;
     padding: 50px auto;
     text-align: center;
     }
     
     #about-us, #contact-us {
-    width: 400px;
+    padding-top: 20px;
+    width: 350px;
     margin: 0 auto;
     text-align: center;
     }
@@ -385,7 +387,7 @@ header nav {
     display: none;
     }
     header nav .menu-toggle {
-    display: block;
+    display: none;
     }
     }
     
@@ -418,11 +420,3 @@ header nav {
       }
     }
     
- 
-      /* styles for mobile and
-    
-    /* Add more styles as needed to improve the look and feel of the website */
-    
-    /* Make sure to test the website on different screen sizes and devices to ensure a consistent design and user experience */
-    
-    /* Use CSS preprocessors like SASS or LESS to make your CSS code more organized and maintainable */
