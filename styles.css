@@ -214,15 +214,20 @@ body {
     margin-bottom:20px;
 }
 
+@media only screen and (max-width: 600px) {
 #services {
   margin: 20px;
   background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
   padding: 20px;
   text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
 }
 
 #web-development, #software-development {
-  display: inline-block;
+  display: block;
   width: 30%; /* set the width of each section to 49% to prevent them from taking up the full width */
   margin: 1%; /* add a margin of 1% between the sections */
 }
