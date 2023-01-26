@@ -10,41 +10,29 @@ body {
     font-size: 17px;
     line-height: 1.4705882353;
     font-weight: 400;
-    /* letter-spacing: -0.022em; */
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
       sans-serif;
     background-color: #fff;
-    /* background-color: #e9e9e9; */
     color: #1d1d1f;
     font-style: normal;
   }
   #logo {
     width: 200px;
-
     margin-left: auto;
     margin-right: auto;
 
-    /* max-width: 200px; */
-  
-    /* filter: drop-shadow(1px 1px #0071e3); */
   }
   #header {
     background: rgba(0, 0, 0, 0.8);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
     position: center;
-    /* top: auto;
-    right: auto;
-    left: auto; */
     z-index: 9999;
     display: block;
     margin: 0;
     width: auto;
     min-width: auto;
     
-    /* height: 90px;
-    max-height: 90px; */
-  
     font-size: 17px;
   
   }
@@ -74,16 +62,13 @@ body {
   
   }
   .underline {
-    /* color: #00FF00; */
     color: #0071e3;
     text-shadow: 1px 1px 2px  black;
   }
   h2{
-    /* font-size: 25px; */
+    
     font-weight: 200;
     color: #6e6e73;
-    margin: 25px 100px;
-  
     font-size: 50px;
     line-height: 1.14286;
     font-weight: 200;
@@ -110,9 +95,6 @@ body {
     
     
   }
-
-
-
 
 
 
@@ -167,7 +149,7 @@ body {
     }
     
     #how-it-works {
-    padding: auto;
+    padding: 20px;
     margin-top: 50px;
     text-align: center;
     }
@@ -175,7 +157,7 @@ body {
     #testimonials {
     display: block;
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     margin-top: 50px;
     background-image: linear-gradient(to bottom, #f8f8f8, #d8d8d8);
 
@@ -186,10 +168,17 @@ body {
     .testimonial {
     display: inline-block;
     width: 300px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     text-align: center;
+    padding: 20px;
     }
-    
+    @media only screen and (max-width: 600px) {
+      .testimonial {
+      display: block;
+      width: auto;
+    }
+  }
+
     .testimonial p {
     font-size: 16px;
     line-height: 1.5;
@@ -215,6 +204,14 @@ body {
     margin: 0 auto;
     text-align: center;
     }
+    @media only screen and (max-width: 600px) {
+      #about-us, #contact-us {
+        padding-top: 20px;
+        width: auto;
+        margin: 0 auto;
+        text-align: center;
+        }
+      }
     
     #about-us h2, #contact-us h2 {
     font-size: 20px;
@@ -356,7 +353,7 @@ header nav {
     }
     
     header nav ul li a:hover {
-    color: #0c4da2;
+    color: #FFA500;
     }
     
     header nav ul li a.active {
@@ -382,41 +379,67 @@ header nav {
     cursor: pointer;
     }
     
-    @media screen and (max-width: 600px) {
-    header nav ul {
+    /* ################################################## */
+
+
+.hamburger-menu {
+  position: relative;
+  
+  
+}
+
+.hamburger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .nav-menu {
     display: none;
-    }
-    header nav .menu-toggle {
-    display: none;
-    }
-    }
+  }
+  
+  .nav-menu ul {
+    display: block;
+    width:100%;
+    text-align: center;
     
-    @media screen and (min-width: 600px) {
-    header nav .menu-toggle {
-    display: none;
-    }
-    }
     
-    .menu-open {
-    display: flex !important;
-    }
+  }
+  .nav-menu ul a {
+    display: block;
+    width:100%;
+    text-align: center;
+    padding-top: 50px;
     
-    @media only screen and (max-width: 600px) {
-      #header {
-        text-align: center;
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      #featured-tools {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .tool-card {
-        width: 80%;
-        margin: 20px 10%;
-      }
-    }
-    
+
+  }
+
+  
+  .nav-menu.show {
+    display: block;
+
+    height: 600px;
+    /* background: linear-gradient( #333333 40%, #8b1c1c); */
+    background: linear-gradient( #333333 40%, #0071e3);
+  }
+  
+  
+ 
+
+  .hamburger-icon {
+    display: block;
+  }
+  
+}
