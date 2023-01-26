@@ -17,6 +17,7 @@ body {
     font-style: normal;
   }
   #logo {
+    padding-top: 15px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
