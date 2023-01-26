@@ -12,7 +12,7 @@
     <meta name="author" content="Your Name" />
     <title>Free Tools Website</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
   </head>
   <body>
     <header>
@@ -23,9 +23,16 @@
             src="images/logo2.png"
             alt="Free Tools Turingist Website Logo"
         /></a>
-        <nav>
+        
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-menu">
           <ul>
-            <li><a href="#tools">Tools</a></li>
+            <li><a href="#featured-tools">Tools</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#resources">Resources</a></li>
             <li><a href="#about-us">About Us</a></li>
@@ -34,8 +41,13 @@
         </nav>
       </div>
     </header>
+    
+  </div>
+  
     <section id="hero-section">
-      <h1>Free Tools for All Your Needs</h1>
+      <h1>
+        We Build Custom Tools For Your Needs
+      </h1>
       <p>
         Find the perfect tool for your project or task with our wide selection
         of free online tools <br />OR <br />
@@ -71,16 +83,16 @@
       <section id="web-development">
         <h3>Web Development</h3>
         <p>
-          We offer a wide range of web development services including website
-          design, e-commerce solutions, and more.
+          We offer a wide range of web development <br />services including
+          website design, e-commerce solutions, and more.
         </p>
         <a href="#web-development" class="cta-button">Learn More</a>
       </section>
       <section id="software-development">
         <h3>Software Development</h3>
         <p>
-          Our software development services include custom software development,
-          mobile app development, and more.
+          Our software development services include <br />custom software
+          development, mobile app development, and more.
         </p>
         <a href="#software-development" class="cta-button">Learn More</a>
       </section>
@@ -138,5 +150,14 @@
         <p>Privacy Policy | Terms of Service</p>
       </div>
     </footer>
+    <!-- <script scr="app.js"></script> -->
+    
+    <script>
+      function toggleMenu() {
+        var menu = document.querySelector(".nav-menu");
+        menu.classList.toggle("show");
+      }
+  </script>
+  
   </body>
 </html>
