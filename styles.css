@@ -192,34 +192,7 @@ body {
     margin-top: 20px;
     }
     
-    footer {
     
-    background-color: #f8f8f8;
-    padding: 50px auto;
-    text-align: center;
-    }
-    
-    #about-us, #contact-us {
-    padding-top: 20px;
-    width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    }
-    @media only screen and (max-width: 600px) {
-      #about-us, #contact-us {
-        padding-top: 20px;
-        width: auto;
-        margin: 0 auto;
-        text-align: center;
-        }
-      }
-    
-    #about-us h2, #contact-us h2 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom:20px;
-    text-align: center;
-}
 
 #services{
   margin: 20px;
@@ -443,4 +416,34 @@ header nav {
     display: block;
   }
   
+}
+
+/* ################################### FOOTER ########################################################## */
+footer {
+    
+  background-color: #f8f8f8;
+  padding: 50px auto;
+  text-align: center;
+  }
+  
+  #about-us, #contact-us {
+  padding-top: 20px;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    #about-us, #contact-us {
+      padding-top: 20px;
+      width: auto;
+      margin: 0 auto;
+      text-align: center;
+      }
+    }
+  
+  #about-us h2, #contact-us h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom:20px;
+  text-align: center;
 }
