@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Free Tools for Software Developers</title>
+    <link rel="stylesheet" type="text/css" href="tools.css" />
+  </head>
+  <body>
+    <header>
+        <div id="header">
+          <a href="index.html"
+            ><img
+              id="logo"
+              src="images/logo2.png"
+              alt="Free Tools Turingist Website Logo"
+          /></a>
+          
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="nav-menu">
+            <ul>
+              <li><a href="tools.html">Tools</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#resources">Resources</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <h1>Free Tools</h1>
+    
+      <section id="tools">
+        <h2>List of Free Tools</h2>
+        <ul>
+          <!-- Tool List -->
+          <li>
+            <img class="tools-img" src="images/tool1.jpg" alt="Tool 1 image">
+            <h3><a href="#tool1">Tool 1</a></h3>
+            <p>Tool 1 description goes here</p>
+          </li>
+          <li>
+            <img class="tools-img" src="images/tool2.jpg" alt="Tool 2 image">
+            <h3><a href="#tool2">Tool 2</a></h3>
+            <p>Tool 2 description goes here</p>
+          </li>
+          <li>
+            <img class="tools-img" src="images/tool3.jpg" alt="Tool 3 image">
+            <h3><a href="#tool3">Tool 3</a></h3>
+            <p>Tool 3 description goes here</p>
+          </li>
+          <li>
+            <img class="tools-img" src="images/tool3.jpg" alt="Tool 4 image">
+            <h3><a href="#tool4">Tool 4</a></h3>
+            <p>Tool 4 description goes here</p>
+          </li>
+          <!-- Add more tools here -->
+        </ul>
+      </section>
+      <!-- <script scr="app.js"></script> -->
+    
+    <script>
+        function toggleMenu() {
+          var menu = document.querySelector(".nav-menu");
+          menu.classList.toggle("show");
+        }
+    </script>
+  </body>
+</html>
