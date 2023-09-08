@@ -1,0 +1,284 @@
+a, button {
+    text-decoration: none;
+  }
+  
+  body {
+      
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 17px;
+      line-height: 1.4705882353;
+      font-weight: 400;
+      font-family: 'Roboto', 'FontAwesome', 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      background-color: #fff;
+      color: #1d1d1f;
+      font-style: normal;
+    }
+    #logo {
+        padding-top: 15px;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    
+      }
+    #header {
+      background: rgba(0, 0, 0, 0.8);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      backdrop-filter: saturate(180%) blur(20px);
+      position: center;
+      z-index: 9999;
+      display: block;
+      margin: 0;
+      width: auto;
+      min-width: auto;
+      
+      font-size: 17px;
+    
+    }
+    #heading {
+      margin-top: 130px;
+      padding-top: 0px;
+      font-size: 25px;
+      line-height: 1.07143;
+      font-weight: 600;
+      letter-spacing: -.005em;
+      font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      
+    }
+
+.book-a-call{
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #06c;
+    border: none;
+    border-radius: 30px;
+    font-size:20px;
+    color: #fff;
+    
+    }
+    .book-a-call:hover{
+    background: #0071e3;
+    
+    }
+    .underline {
+    color: #0071e3;
+    text-shadow: 1px 1px 2px  black;
+    }
+    h2{
+    
+    font-weight: 200;
+    color: #6e6e73;
+    font-size: 50px;
+    line-height: 1.14286;
+    font-weight: 200;
+    letter-spacing: .007em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    }
+    #subheading{
+    margin-top: 40px;
+    }
+    #image-box{
+    display: inline-block;
+    
+    border-style: double;
+    border-width: 20px;
+    border-color: transparent;
+    padding: 35px 40px;
+    width: 200px;
+    border-radius: 50%;
+    
+    background: #e8e8e8;
+    
+    box-shadow: inset -7px -7px 5px #fff, inset 7px 7px 7px rgba(94, 104, 121, 0.288);
+    filter: drop-shadow( 5px 5px 15px #bdbdbd);
+    
+    
+    }
+    
+
+  ul {
+    list-style: none; /* Override default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the list items */
+  }
+  
+
+  .tools-img {
+    padding-top: 100px;
+    
+    height: 200px;
+    width: 300px;
+  }
+  
+    
+  
+  .tool-name {
+    
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .tool-description {
+    font-size: 17px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  
+  .tool-link {
+    text-decoration: none;
+    color: #06c;
+    font-weight: 600;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .tool-link:hover {
+    cursor: pointer;
+  }
+  
+   
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    }
+    
+    nav ul li a:hover {
+    color: #0071e3;
+    }
+
+header {
+
+    position: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    }
+        
+header nav {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #0071e3;
+    }
+    
+    header nav ul li {
+    margin: auto;
+    }
+    
+    header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    }
+    
+    header nav ul li a:hover {
+    color: #FFA500;
+    }
+    
+    header nav ul li a.active {
+    color: #0c4da2;
+    font-weight: bold;
+    }
+    
+    header nav .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    header nav .logo:hover {
+    color: #0c4da2;
+    }
+    
+    header nav .menu-toggle {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    }
+    
+/* ################################################## */
+        
+
+.hamburger-menu {
+    position: relative;
+    
+    
+    }
+    
+    .hamburger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    
+    }
+    
+    .hamburger-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    
+    }
+    
+    
+    @media only screen and (max-width: 600px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .nav-menu ul {
+        display: block;
+        width:100%;
+        text-align: center;
+        
+        
+    }
+    .nav-menu ul a {
+        display: block;
+        width:100%;
+        text-align: center;
+        padding-top: 50px;
+        
+    
+    }
+    
+    
+    .nav-menu.show {
+        display: block;
+    
+        height: 600px;
+        /* background: linear-gradient( #333333 40%, #8b1c1c); */
+        background: linear-gradient( #333333 40%, #0071e3);
+    }
+    
+    
+    
+    
+    .hamburger-icon {
+        display: block;
+    }
+    
+    }
+    

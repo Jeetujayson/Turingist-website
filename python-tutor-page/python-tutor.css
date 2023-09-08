@@ -1,0 +1,107 @@
+body {
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.4705882353;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: #fff;
+  /* background-color: #e9e9e9; */
+  color: #1d1d1f;
+  font-style: normal;
+}
+#logo {
+  width: 200px;
+  /* max-width: 200px; */
+
+  /* filter: drop-shadow(1px 1px #0071e3); */
+}
+#header {
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  min-width: auto;
+
+  height: 90px;
+  max-height: 90px;
+
+  font-size: 17px;
+
+}
+#heading {
+  margin-top: 130px;
+  padding-top: 0px;
+  font-size: 25px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -.005em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  
+}
+
+.book-a-call{
+  cursor: pointer;
+  padding: 10px 20px;
+    background: #06c;
+    border: none;
+    border-radius: 30px;
+    font-size:20px;
+    color: #fff;
+    
+}
+.book-a-call:hover{
+  background: #0071e3;
+
+}
+.underline {
+  /* color: #00FF00; */
+  color: #0071e3;
+  text-shadow: 1px 1px 2px  black;
+}
+h2{
+  /* font-size: 25px; */
+  font-weight: 200;
+  color: #6e6e73;
+  margin: 25px 100px;
+
+  font-size: 50px;
+  line-height: 1.14286;
+  font-weight: 200;
+  letter-spacing: .007em;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+#subheading{
+  margin-top: 40px;
+}
+#image-box{
+  display: inline-block;
+
+  border-style: double;
+  border-width: 20px;
+  border-color: transparent;
+  padding: 35px 40px;
+  width: 200px;
+  border-radius: 50%;
+  
+  background: #e8e8e8;
+  
+  box-shadow: inset -7px -7px 5px #fff, inset 7px 7px 7px rgba(94, 104, 121, 0.288);
+  filter: drop-shadow( 5px 5px 15px #bdbdbd);
+  
+  
+}
+#python-logo{
+  filter: drop-shadow(4px 4px 1px #000000);
+  width: 200px;
+/* filter: drop-shadow(4px 4px 1px #00FF00); */
+/* -webkit-filter: drop-shadow(0 5px 2px rgb(34, 34, 34) ); */
+}
