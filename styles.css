@@ -307,7 +307,7 @@ header {
   
   @media (max-width: 768px) {
     #email-animation {
-      margin-top: 0px; 
+      margin-top: -10px; 
       top: -250px;
   
     }
