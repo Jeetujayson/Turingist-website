@@ -353,6 +353,7 @@ header {
   
   @media (max-width: 768px) {
     #hero-section h1 {
+      line-height: 1.3;
       margin-top: 190px; 
       font-size: 55px; /* Mobile font size */
     }
